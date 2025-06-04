@@ -148,3 +148,41 @@ header div {
         color: var(--bg-logo);
     }
 }
+
+.container_cards {
+    width: 1020px;
+    background-color: var(--input-color);
+    margin: auto;
+    margin-top: 30px;
+    padding: 60px;
+}
+
+.hero {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("../assets/banner-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.texts {
+    margin-left: 50px;
+    color: var(--bg-line);
+    font-size: 32px;
+}
+
+.texts strong {
+    color: var(--bg-logo);
+}
+
+.texts button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--bg-logo);
+    color: var(--bg-line);
+}
