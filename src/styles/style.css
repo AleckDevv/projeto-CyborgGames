@@ -265,3 +265,25 @@ header div {
     transform: scale(1.1);
     cursor: pointer;
 }
+
+.discover_popular {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.discover_popular button {
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--bg-logo);
+    color: var(--bg-line);
+    transition: all 0.3s ease-in-out;
+}
+
+.discover_popular button:hover {
+    background-color: var(--bg-line);
+    color: var(--bg-logo);
+}
