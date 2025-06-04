@@ -5,6 +5,9 @@
     --bg-background: #1f2122;
     --bg-border: #adb5bd;
     --input-color: #27292a;
+    --bg-games: #1f2122;
+    --color-icons-i-1: #fff000;
+    --color-icons-i-2: #d63384;
 }
 
 * {
@@ -185,4 +188,80 @@ header div {
     border: none;
     background-color: var(--bg-logo);
     color: var(--bg-line);
+}
+
+.games {
+    background-color: var(--bg-games);
+    margin-top: 57px;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.games strong {
+    color: var(--bg-line);
+    text-decoration: underline;
+}
+
+.games h2 {
+    color: var(--bg-logo);
+    font-size: 34px;
+}
+
+
+.cards_game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.game {
+    width: 263px;
+    padding: 20px 15px;
+    background-color: var(--input-color);
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.game img {
+    width: 80%;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.description_game {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title p {
+    font-size: 15px;
+}
+
+.title p:first-child {
+    color: var(--bg-line);
+}
+
+.title p:last-child {
+    color: var(--bg-fonts);
+}
+
+.avaliation i:first-child {
+    color: var(--color-icons-i-1);
+}
+
+.avaliation i:last-child {
+    color: var(--color-icons-i-2);
+}
+
+.avaliation i {
+    font-size: 13px;
+}
+
+.game:hover {
+    transform: scale(1.1);
+    cursor: pointer;
 }
