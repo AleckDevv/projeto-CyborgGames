@@ -153,7 +153,8 @@ header div {
 }
 
 .container_cards {
-    width: 1020px;
+    width: 100%;
+    max-width: 1020;
     background-color: var(--input-color);
     margin: auto;
     margin-top: 30px;
@@ -212,6 +213,8 @@ header div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .game {
@@ -351,4 +354,87 @@ footer a {
 footer span:hover {
     transition: all 0.1s ease-in-out;
     color: var(--bg-logo);
+}
+
+@media (max-width: 768px) {
+
+    /* GERAL */
+    .container_cards {
+        width: 100%;
+        max-width: 100%;
+        padding: 40px 20px;
+    }
+
+    .cards_game {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .game {
+        width: 100%;
+        max-width: 300px;
+        margin: 20px auto 0;
+    }
+
+    .item1 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .item1 ul {
+        width: 100%;
+    }
+
+    .item1 img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .texts {
+        font-size: 28px;
+        margin-left: 20px;
+    }
+
+    .texts button {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 426px) {
+    .container_cards {
+        padding: 30px 10px;
+    }
+
+    .cards_game {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .game {
+        width: 100%;
+        max-width: 300px;
+        padding: 15px;
+    }
+
+    .texts {
+        font-size: 23px;
+        margin-left: 15px;
+    }
+
+    .texts button {
+        margin-top: 10px;
+    }
+
+    .item1 {
+        padding: 10px 0;
+    }
+
+    footer p,
+    footer a {
+        font-size: 16px;
+        text-align: center;
+        padding: 0 10px;
+    }
 }
