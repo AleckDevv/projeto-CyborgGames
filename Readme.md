@@ -60,13 +60,6 @@ src/
 
 ---
 
-## 📷 Imagens do Projeto
-
-> 💡 *Você pode adicionar aqui prints da página para apresentar o visual do projeto:*
-
-
----
-
 ## 🚀 Como Usar
 
 1. Abra o seguinte link no navegador:
